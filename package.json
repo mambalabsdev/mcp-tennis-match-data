@@ -1,0 +1,50 @@
+{
+  "name": "@mambalabsdev/mcp-tennis-match-data",
+  "version": "1.0.0",
+  "description": "MCP server for Tennis Match Data. ATP and WTA results, schedules, and rankings by date as flat rows. Runs on Apify.",
+  "type": "module",
+  "bin": {
+    "mcp-tennis-match-data": "./build/index.js"
+  },
+  "files": [
+    "build",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "build": "tsc && chmod +x build/index.js",
+    "test": "npm run build && node --test test/*.test.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "tennis",
+    "atp",
+    "wta",
+    "scores",
+    "rankings",
+    "apify",
+    "clay"
+  ],
+  "author": "Mamba Labs <labs@mambamindsetgrowth.com>",
+  "license": "MIT",
+  "homepage": "https://apify.com/mambalabs/tennis-match-data",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mambalabsdev/mcp-tennis-match-data"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "typescript": "5.9.3"
+  },
+  "mcpName": "com.mambabuilt/mcp-tennis-match-data"
+}

@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "mamba-tennis-match-data": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@mambalabsdev/mcp-tennis-match-data"
+      ],
+      "env": {
+        "APIFY_TOKEN": "your-apify-token"
+      }
+    }
+  }
+}
