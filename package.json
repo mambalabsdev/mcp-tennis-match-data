@@ -1,6 +1,6 @@
 {
   "name": "@mambalabsdev/mcp-tennis-match-data",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server for Tennis Match Data. ATP and WTA results, schedules, and rankings by date as flat rows. Runs on Apify.",
   "type": "module",
   "bin": {
